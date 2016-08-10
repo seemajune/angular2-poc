@@ -23,11 +23,6 @@ export class Assignment {
 })
 
 export class AppComponent {
-	assignment: Assignment = {
-		id: 1,
-		title: 'MCAT Assignment 1',
-		subtitle: 'MCAT Diagnostic Exam'
-	}; 
 	public assignments = ASSIGNMENTS;
 }
 

@@ -17,11 +17,6 @@ var Assignment = (function () {
 exports.Assignment = Assignment;
 var AppComponent = (function () {
     function AppComponent() {
-        this.assignment = {
-            id: 1,
-            title: 'MCAT Assignment 1',
-            subtitle: 'MCAT Diagnostic Exam'
-        };
         this.assignments = ASSIGNMENTS;
     }
     AppComponent = __decorate([
