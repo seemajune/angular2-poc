@@ -9,17 +9,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var Assignment = (function () {
+    function Assignment() {
+    }
+    return Assignment;
+}());
+exports.Assignment = Assignment;
 var AppComponent = (function () {
     function AppComponent() {
+        this.assignment = {
+            id: 1,
+            title: 'MCAT Assignment 1',
+            subtitle: 'MCAT Diagnostic Exam'
+        };
+        this.assignments = ASSIGNMENTS;
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
+            template: "\n\t<h1>Assignments</h1>\n\t<div *ngFor=\"let assignment of assignments\">\n\t<div class=\"card card__details\">\n\t<h2>{{assignment.title}}</h2>\n\t<div class=\"card__summary\">\n\t<p>{{assignment.subtitle}}</p>\n\t</div>\n\t<button class=\"btn btn__watch\">watch</button>\n\t</div>\n\t</div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
+var ASSIGNMENTS = [
+    { id: 11, title: 'MCAT Assignment 11', subtitle: 'MCAT Diagnostic Exam' },
+    { id: 12, title: 'MCAT Assignment 12', subtitle: 'Science Assessments' },
+    { id: 13, title: 'MCAT Assignment 13', subtitle: 'Important Welcome Message' },
+    { id: 14, title: 'MCAT Assignment 14', subtitle: 'How to Access your  MCAT Flashcard App' },
+    { id: 15, title: 'MCAT Assignment 15', subtitle: 'How to Access a Digital Version of your MCAT Review Books' },
+    { id: 16, title: 'MCAT Assignment 16', subtitle: 'Information About your Higher Score Guarantee' }
+];
 //# sourceMappingURL=app.component.js.map
